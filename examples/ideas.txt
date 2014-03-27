@@ -1,0 +1,44 @@
+
+Other repository "SlidesJS-Update"
+Update the regular JS file to have all the useful comments from the coffee script file. Tag it.
+Then Update with some of the pull requests from the real project's github issues list.
+
+//----------------------------- 
+
+#thn-api-access
+How to get a reference to the SJS api.
+
+
+//----------------------------- 
+
+#thn-css-sized
+How to set the slidehow width and height via css/media queries instead of hard coding in settings at instantiation.
+
+All slides have equal sized images with absolutely positioned div of text covering right 33% of image.
+Media query css to move the text box under the image as display:block;
+BRL or Graham's details-slideshow.js code.
+	The sjs.manualUpdate which is something I added can be replaced with standard sjs.update probably.
+	Need the window.matchMedia stuff
+	and mql.addListener( orientationChangeHandler );
+	and setTimeout stuff inside of orientationChangeHandler
+	and do not need anything related to centerImage.
+	Do not need slidetweaks.
+	So, the relevant parts of uponOrientation() can maybe go directly into the setTimeout section of the code.
+
+//----------------------------- 
+
+#thn-custom-pagination
+How to make custom pagination thumbnails markup control the slideshow.
+
+//----------------------------- 
+
+#thn-reposition-navigation
+
+How to move the built-in navigation elements to a different location in the DOM to facilitate styling needs. I think I did this on an earlier non-realestate site (urca?)
+
+//----------------------------- 
+
+#thn-one-slide
+How skip creating the slideshow if only 1 or 2 slides are present.
+
+//----------------------------- 
