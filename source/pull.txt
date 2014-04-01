@@ -1,0 +1,15 @@
+https://github.com/nathansearles/Slides/pull/563/files to my line 296
+
+
+https://github.com/nathansearles/Slides/pull/529/files the plain  js file. Fix disappearing slides on resize
+
+
+https://github.com/nathansearles/Slides/pull/544
+
+
+https://github.com/nathansearles/Slides/pull/548/files
+
+
+https://github.com/nathansearles/Slides/pull/542/files The destroy method is interesting
+also inspires me to add another callback option that runs at the end of update (afterUpdate maybe also beforeUpdate) but not the way they added it, like the way all the other callbacks were already added is better.
+
