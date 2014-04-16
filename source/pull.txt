@@ -13,3 +13,35 @@ https://github.com/nathansearles/Slides/pull/548/files
 https://github.com/nathansearles/Slides/pull/542/files The destroy method is interesting
 also inspires me to add another callback option that runs at the end of update (afterUpdate maybe also beforeUpdate) but not the way they added it, like the way all the other callbacks were already added is better.
 
+
+
+
+// current slide
+$( '.slidesjs-slide' ).eq( sjs.data.current ).addClass( 'active' );
+
+
+// last slide
+$( '.slidesjs-slide' ).eq( sjs.data.total-1 ).addClass( 'last' );
+
+
+
+There is a 1 digit difference between sjs.data.total and sjs.data.current.
+
+current count starts from 0 like an array.
+total count starts from 1 
+
+
+// previous slide
+if current is 0, 
+prev slide is sjs.data.total-1
+else $( '.slidesjs-slide' ).eq( sjs.data.current-1 )
+
+// next slide 
+if current equal to sjs.data.total
+next slide is 0 
+$( '.slidesjs-slide' ).eq( 0 )
+else 
+$( '.slidesjs-slide' ).eq( sjs.data.current+1 )
+
+// go to last slide
+sjs.goto( sjs.data.total )
